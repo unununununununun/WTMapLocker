@@ -1,0 +1,95 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'WT Map Locker'
+  ClientHeight = 491
+  ClientWidth = 378
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object ListBox1: TListBox
+    Position.X = 8.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 361.000000000000000000
+    Size.Height = 387.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    ShowCheckboxes = True
+    OnChangeCheck = ListBox1ChangeCheck
+    Viewport.Width = 357.000000000000000000
+    Viewport.Height = 383.000000000000000000
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 8.000000000000000000
+    Position.Y = 33.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 14.000000000000000000
+    Text = 'Maps path'
+    TabOrder = 3
+  end
+  object btnSelectDir: TButton
+    Position.X = 321.000000000000000000
+    Position.Y = 33.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = '...'
+    OnClick = btnSelectDirClick
+  end
+  object Label2: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 75.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Maps list'
+    TabOrder = 2
+  end
+  object RadioButton2: TRadioButton
+    Position.X = 248.000000000000000000
+    Position.Y = 77.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'avn*'
+    OnChange = RadioButton1Change
+  end
+  object RadioButton3: TRadioButton
+    Position.X = 313.000000000000000000
+    Position.Y = 77.000000000000000000
+    Size.Width = 48.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'air*'
+    OnChange = RadioButton1Change
+  end
+  object RadioButton1: TRadioButton
+    IsChecked = True
+    Position.X = 183.000000000000000000
+    Position.Y = 77.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'avg*'
+    OnChange = RadioButton1Change
+  end
+end
